@@ -19,7 +19,7 @@ Aplikasi ini dirancang sederhana dengan tampilan yang mudah dipahami sehingga da
 ## 📸 Tampilan Aplikasi
 
 ### 1. Logo Aplikasi  
-<img width="1080" height="2400" alt="image" src="https://github.com/user-attachments/assets/f0e2619c-5606-4f22-97cb-fc6bf1aceb89" />
+<img width="100" height="240" alt="image" src="https://github.com/user-attachments/assets/f0e2619c-5606-4f22-97cb-fc6bf1aceb89" />
 
 
 ---
@@ -30,6 +30,6 @@ Halaman ini menampilkan:
 - Teks sambutan untuk pengguna
 - Deskripsi singkat tentang Informatika UNSOED
 - Tombol navigasi untuk berpindah ke halaman berikutnya
-<img width="1080" height="2400" alt="image" src="https://github.com/user-attachments/assets/00d0d00b-3824-4223-ad25-c9b6a7cb3fb3" />
+<img width="100" height="240" alt="image" src="https://github.com/user-attachments/assets/e152375d-cdf2-4be1-b5f0-9cb1771395bc" />
 
 ---
