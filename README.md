@@ -1,3 +1,5 @@
+# H1D023031_Yohana-Des-Ingrid-Patricia-Butarbutar_Tugas-1-Pertemuan-2_Pemrograman-Mobile
+
 ## 📝 Deskripsi Singkat
 Aplikasi ini dibuat sebagai **tugas pertama** pada pertemuan ke-2 mata kuliah **Praktikum Pemrograman Mobile**.  
 Tujuan aplikasi adalah untuk menampilkan informasi mengenai **Program Studi Informatika** di **Universitas Jenderal Soedirman**, khususnya di Fakultas Teknik.  
