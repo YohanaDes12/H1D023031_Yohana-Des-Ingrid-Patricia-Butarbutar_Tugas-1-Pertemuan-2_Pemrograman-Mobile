@@ -22,7 +22,6 @@ Aplikasi ini dirancang sederhana dengan tampilan yang mudah dipahami sehingga da
 <img width="365" height="775" alt="image" src="https://github.com/user-attachments/assets/a9f9dd8b-1e62-4caa-b616-cd46510aa581" />
 
 
-
 ---
 
 ### 2. Halaman Utama  
@@ -35,3 +34,16 @@ Halaman ini menampilkan:
 
 
 ---
+
+# Tugas 2 Pertemuan 3: Penambahan Halaman Profil Lulusan
+
+Pada tugas kedua ini, aplikasi dikembangkan lebih lanjut dengan menambahkan sebuah halaman khusus yang menampilkan profil lulusan. Halaman ini memuat informasi mengenai identitas lulusan, detail kontak, serta tautan menuju akun media sosial.
+
+## Tampilan Halaman Profil Lulusan
+Pengguna dapat membuka halaman ini dengan menekan tombol *"Berikutnya"* dari halaman utama aplikasi.
+<img width="293" height="641" alt="image" src="https://github.com/user-attachments/assets/5a13130b-66a4-4bf9-9a23-8f9fc058e22a" />
+
+
+## Demo Aplikasi (Navigasi Halaman)
+Berikut adalah cuplikan video yang menampilkan proses perpindahan antar halaman dalam aplikasi.
+[Lihat Video Demo Aplikasi](LINK_VIDEO)
