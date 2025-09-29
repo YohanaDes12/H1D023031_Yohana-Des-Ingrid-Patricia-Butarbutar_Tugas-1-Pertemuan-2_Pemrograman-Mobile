@@ -56,6 +56,7 @@ Berikut adalah cuplikan video yang menampilkan proses perpindahan antar halaman 
 
 Pada tugas ini,  akan mengimplementasikan arsitektur MVVM (Model-View-ViewModel) dan melakukan networking menggunakan API dari OpenLibrary untuk menampilkan daftar buku ke dalam aplikasi Android.
 
+<img width="168" height="367" alt="image" src="https://github.com/user-attachments/assets/4cf0f6ec-5a6f-4e2e-b666-f8e79f877fc3" />
 
 
 ## Demo Aplikasi 
