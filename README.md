@@ -47,5 +47,4 @@ Pengguna dapat membuka halaman ini dengan menekan tombol *"Berikutnya"* dari hal
 
 
 ## Demo Aplikasi (Navigasi Halaman)
-Berikut adalah cuplikan video yang menampilkan proses perpindahan antar halaman dalam aplikasi! app/src/main/res/drawable/demo_aplikasi.gif
-
+Berikut adalah cuplikan video yang menampilkan proses perpindahan antar halaman dalam aplikasi! https://github.com/YohanaDes12/H1D023031_Yohana-Des-Ingrid-Patricia-Butarbutar_Tugas-1-Pertemuan-2_Pemrograman-Mobile/blob/main/app/src/main/res/drawable/demo_aplikasi.gif
