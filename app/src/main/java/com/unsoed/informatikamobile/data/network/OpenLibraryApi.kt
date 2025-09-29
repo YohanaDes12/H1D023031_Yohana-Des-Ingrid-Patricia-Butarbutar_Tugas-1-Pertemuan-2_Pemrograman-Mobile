@@ -1,15 +1,14 @@
 package com.unsoed.informatikamobile.data.network
 
-import com.unsoed.informatikamobile.utils.Constants
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import com.unsoed.informatikamobile.data.model.SearchResponse
+import retrofit2.Response
+import retrofit2.http.GET
+import retrofit2.http.Query
 
-object RetrofitInstance {
-    val api: OpenLibraryApi by lazy {
-        Retrofit.Builder()
-            .baseUrl(Constants.BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-            .create(OpenLibraryApi::class.java)
-    }
+interface OpenLibraryApi {
+    @GET("search.json")
+    suspend fun searchBooks(
+        @Query("q") query: String,
+        @Query("limit") limit: Int = 10
+    ): Response<SearchResponse>
 }
