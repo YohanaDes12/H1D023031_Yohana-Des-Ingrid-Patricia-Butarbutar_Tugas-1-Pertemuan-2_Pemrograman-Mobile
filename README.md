@@ -47,5 +47,5 @@ Pengguna dapat membuka halaman ini dengan menekan tombol *"Berikutnya"* dari hal
 
 
 ## Demo Aplikasi (Navigasi Halaman)
-Berikut adalah cuplikan video yang menampilkan proses perpindahan antar halaman dalam aplikasi! ![Uploading ifUnsoedMobileactivity_halaman2.xmlif_Unsoed_Mobile.app.main2025-09-2219-58-37-ezgif.com-video-to-gif-converter.gif…]()
+Berikut adalah cuplikan video yang menampilkan proses perpindahan antar halaman dalam aplikasi! app/src/main/res/drawable/demo_aplikasi.gif
 
