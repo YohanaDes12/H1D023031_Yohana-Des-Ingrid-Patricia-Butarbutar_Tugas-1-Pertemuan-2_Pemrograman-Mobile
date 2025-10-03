@@ -29,9 +29,12 @@
     <string name="himpunan">Himpunan Mahasiswa Informatika (HMIF UNSOED)</string>
     <string name="ig_himpunan">https://www.instagram.com/hmifunsoed</string>
     <string name="website">Website Resmi Informatika Unsoed</string>
+    <string name="koleksi_buku">Koleksi Buku</string>
     <string name="facebook">Facebook Informatika Unsoed</string>
     <string name="profil_lulusan">Profil Lulusan</string>
     <string name="desc_lulusan">
         Lulusan Program Studi Informatika Unsoed sebagian besar bekerja sebagai tenaga ahli di bidang perekayasaan perangkat lunak (Programer, Analis Sistem, Manajer Proyek, Database Administrator), Wirausahawan Informatika dan Dosen/Peneliti.
     </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

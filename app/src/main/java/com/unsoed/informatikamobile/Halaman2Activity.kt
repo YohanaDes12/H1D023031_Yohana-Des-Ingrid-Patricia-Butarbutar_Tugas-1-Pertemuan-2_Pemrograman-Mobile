@@ -47,22 +47,18 @@ class Halaman2Activity : AppCompatActivity() {
         igText.setText(R.string.ig_himpunan)
 
         // Set icon dan text untuk layout phone
+
+
         val phoneIcon = binding.layoutPhone.root.findViewById<ImageView>(R.id.img_icon)
         val phoneText = binding.layoutPhone.root.findViewById<TextView>(R.id.tv_layout)
         phoneIcon.setImageResource(R.drawable.ic_phone)
         phoneText.setText(R.string.telepon)
 
-        // Set icon dan text untuk layout website
-        val websiteIcon = binding.layoutWebsite.root.findViewById<ImageView>(R.id.img_icon)
-        val websiteText = binding.layoutWebsite.root.findViewById<TextView>(R.id.tv_layout)
-        websiteIcon.setImageResource(R.drawable.ic_himpunan)
-        websiteText.setText(R.string.website)
-
-        // Set icon dan text untuk layout facebook
-        val facebookIcon = binding.layoutFacebook.root.findViewById<ImageView>(R.id.img_icon)
-        val facebookText = binding.layoutFacebook.root.findViewById<TextView>(R.id.tv_layout)
-        facebookIcon.setImageResource(R.drawable.ic_himpunan)
-        facebookText.setText(R.string.facebook)
+        // Set icon dan text untuk layout buku
+        val bukuIcon = binding.layoutBuku.root.findViewById<ImageView>(R.id.img_icon)
+        val bukuText = binding.layoutBuku.root.findViewById<TextView>(R.id.tv_layout)
+        bukuIcon.setImageResource(R.drawable.ic_book)
+        bukuText.text = "Lihat Daftar Buku"
     }
 
     private fun initListener() {
@@ -97,20 +93,9 @@ class Halaman2Activity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Website
-        binding.layoutWebsite.root.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW).apply {
-                data = Uri.parse("https://informatika.unsoed.ac.id")
-            }
-            startActivity(intent)
-        }
-
-        // Facebook
-        binding.layoutFacebook.root.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW).apply {
-                data = Uri.parse("https://www.facebook.com/informatikaunsoed")
-            }
-            startActivity(intent)
+        // Koleksi Buku
+        binding.layoutBuku.root.setOnClickListener {
+            startActivity(Intent(this@Halaman2Activity, DaftarBukuActivity::class.java))
         }
 
         // Back button

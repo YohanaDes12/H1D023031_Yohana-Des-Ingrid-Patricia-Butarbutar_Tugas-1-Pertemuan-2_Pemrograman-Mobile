@@ -1,60 +1,93 @@
 package com.unsoed.informatikamobile.ui.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.unsoed.informatikamobile.R
+import com.unsoed.informatikamobile.data.model.BookDoc
+import com.unsoed.informatikamobile.databinding.FragmentBookDetailBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+class BookDetailFragment(
+    private val title: String,
+    private val author: String,
+    private val year: String,
+    private val coverId: Int? = null
+) : BottomSheetDialogFragment() {
 
-/**
- * A simple [Fragment] subclass.
- * Use the [BookDetailFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class BookDetailFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private var _binding: FragmentBookDetailBinding? = null
+    private val binding get() = _binding!!
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentBookDetailBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        setupUI()
+        loadData()
+    }
+
+    private fun setupUI() {
+        binding.btnClose.setOnClickListener {
+            dismiss()
         }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_book_detail, container, false)
+    private fun loadData() {
+        binding.tvBookTitle.text = title
+        binding.tvAuthor.text = author
+        binding.tvPublishYear.text = year
+
+        // Map untuk beberapa buku dengan cover ID yang diketahui ada
+        val knownCovers = mapOf(
+            "Mastering Kotlin" to 10541840,
+            "Kotlin Programming" to 12404606,
+            "Kotlin Basics" to 8739978
+        )
+
+        val finalCoverId = coverId ?: knownCovers[title]
+
+        finalCoverId?.let { id ->
+            val imageUrl = "https://covers.openlibrary.org/b/id/$id-L.jpg"
+            println("DEBUG: Loading cover with ID: $id, URL: $imageUrl")
+            Glide.with(this)
+                .load(imageUrl)
+                .placeholder(R.drawable.book_not_found)
+                .error(R.drawable.book_not_found)
+                .into(binding.ivBookCover)
+        } ?: run {
+            println("DEBUG: No cover ID available for '$title', using default image")
+            binding.ivBookCover.setImageResource(R.drawable.book_not_found)
+        }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment BookDetailFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            BookDetailFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+        private const val ARG_TITLE = "title"
+        private const val ARG_AUTHOR = "author"
+        private const val ARG_YEAR = "year"
+        private const val ARG_COVER_ID = "cover_id"
+
+        fun newInstance(bookDoc: BookDoc): BookDetailFragment {
+            return BookDetailFragment(
+                title = bookDoc.title ?: "Unknown Title",
+                author = bookDoc.authorName?.joinToString(", ") ?: "Unknown Author",
+                year = bookDoc.firstPublishYear?.toString() ?: "Unknown Year",
+                coverId = bookDoc.coverId
+            )
+        }
     }
 }
