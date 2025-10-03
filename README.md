@@ -59,4 +59,4 @@ Pada tugas ini,  akan mengimplementasikan arsitektur MVVM (Model-View-ViewModel)
 ## Demo Aplikasi 
 Berikut adalah video demo dari aplikasi Daftar Buku (MVVM dan Networking) yang telah dibuat:
 
-![Demo Aplikasi] (https://github.com/YohanaDes12/H1D023031_Yohana-Des-Ingrid-Patricia-Butarbutar_Tugas-1-Pertemuan-2_Pemrograman-Mobile/blob/main/app/src/main/res/drawable/demo_aplikasi_mvvm_network.gif)
+![Demo Aplikasi](https://github.com/YohanaDes12/H1D023031_Yohana-Des-Ingrid-Patricia-Butarbutar_Tugas-1-Pertemuan-2_Pemrograman-Mobile/blob/main/app/src/main/res/drawable/demo_aplikasi_mvvm_network.gif)
