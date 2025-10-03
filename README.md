@@ -60,3 +60,12 @@ Pada tugas ini,  akan mengimplementasikan arsitektur MVVM (Model-View-ViewModel)
 Berikut adalah video demo dari aplikasi Daftar Buku (MVVM dan Networking) yang telah dibuat:
 
 ![Demo Aplikasi](https://github.com/YohanaDes12/H1D023031_Yohana-Des-Ingrid-Patricia-Butarbutar_Tugas-1-Pertemuan-2_Pemrograman-Mobile/blob/main/app/src/main/res/drawable/demo_aplikasi_mvvm_network.gif)
+
+---
+
+# Tugas-4-Pertemuan-5_Fragment Book Detail
+
+BookDetailFragment adalah fragment yang digunakan untuk menampilkan detail sebuah buku yang dipilih pengguna. Fragment ini menampilkan informasi seperti judul, penulis, deskripsi, serta gambar buku, dan dihubungkan dengan layout fragment_book_detail.xml. Tujuannya adalah memberikan tampilan fokus pada satu buku tertentu secara modular dan interaktif.
+
+## Demo Aplikasi
+![Demo Fragment Book Detail](https://raw.githubusercontent.com/YohanaDes12/H1D023031_Yohana-Des-Ingrid-Patricia-Butarbutar_Tugas-1-Pertemuan-2_Pemrograman-Mobile/main/app/src/main/res/drawable/demo_fragment_book_detail.gif)
